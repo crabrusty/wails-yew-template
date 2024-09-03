@@ -60,12 +60,13 @@ pub fn app() -> Html {
     html! {
         <div id="app">
             <p> {"Wails + Yew"} </p>
-            <a href="https://wails.io">
+            <a href="https://wails.io/docs/introduction">
                 <img src="images/wails-logo.svg" class="logo wails" alt="Wails logo"/>
             </a>
-            <a href="https://yew.rs">
+            <a href="https://yew.rs/docs/getting-started/introduction">
                 <img src="images/yew-logo.svg" class="logo yew" alt="Yew logo"/>
             </a>
+            <p>{"Click the logos for reaching documentations."}</p>
             <div class="input-box">
                 <input {oninput} {onkeypress} type="text" placeholder="Enter your name" class="input" />
                 <button {onclick} class="btn">{ "Greet from Wails" }</button>

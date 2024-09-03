@@ -1,6 +1,6 @@
 {
   "$schema": "https://wails.io/schemas/config.v2.json",
-  "name": "ware-watch",
+  "name": "wails-yew-template",
   "outputfilename": "wails-yew-template",
   "frontend:install": "rustup target add wasm32-unknown-unknown && cargo install trunk wasm-bindgen-cli && cargo update",
   "frontend:build": "trunk build",

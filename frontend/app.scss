@@ -1,31 +1,28 @@
 .logo {
     display: inline-flex;
     align-items: center;
-    margin: 0 -29px; /* Reduced margin to bring logos closer */
+    margin: 0 -29px;
     padding: 1.5em;
     will-change: filter;
     transition: filter 0.50s ease;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; /* Ensures logo scales with container */
+    background-size: contain;
     background-origin: content-box;
 }
 
-/* Wails logo styling */
 .logo.wails {
-    width: 25%; /* Original size for Wails logo */
+    width: 25%;
     height: 30%;
-    transform: translateX(15px); /* Adjust positioning */
+    transform: translateX(15px);
 }
 
-/* Yew logo styling */
 .logo.yew {
-    width: 20%; /* Consistent size */
-    height: 22%; /* Smaller height for Yew logo */
-    transform: translateY(-30px); /* Move Yew logo up */
+    width: 20%;
+    height: 22%;
+    transform: translateY(-30px); 
 }
 
-/* Logo hover effects */
 .logo.wails:hover {
     filter: drop-shadow(0 0 2em rgba(255, 0, 0, 0.5));
 }
@@ -34,15 +31,13 @@
     filter: drop-shadow(0 0 2em #20a88a);
 }
 
-/* Result styling */
 .result {
-    height: auto; /* Responsive height */
+    height: auto;
     line-height: 20px;
     margin: 1.5rem auto;
-    color: #c5c6c7; /* Updated result text color */
+    color: #c5c6c7;
 }
 
-/* Button styling */
 .input-box .btn {
     width: 200px;
     height: 60px;
@@ -52,19 +47,17 @@
     padding: 0 16px;
     cursor: pointer;
     font-size: 18px;
-    color: #c5c6c7; /* Updated button text color */
-    background-color: #23303b; /* Darker but not too dark */
+    color: #c5c6c7;
+    background-color: #23303b;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow for prominence */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Button hover effect */
 .input-box .btn:hover {
-    background-color: #2a3748; /* Darker shade for hover effect */
+    background-color: #2a3748;
     transform: scale(1.05);
 }
 
-/* Input box styling */
 .input-box .input {
     border: none;
     border-radius: 6px;
@@ -73,14 +66,13 @@
     height: 60px;
     font-size: 18px;
     padding: 0 16px;
-    color: #c5c6c7; /* Updated input text color */
-    background-color: #23303b; /* Match button background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow for prominence */
+    color: #c5c6c7;
+    background-color: #23303b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Input box focus effect */
 .input-box .input:focus {
-    background-color: #2a3748; /* Darker shade on focus */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on focus */
+    background-color: #2a3748;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }

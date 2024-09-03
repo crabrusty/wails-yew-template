@@ -1,5 +1,8 @@
+.git/
 build/bin
 node_modules
 frontend/dist
 frontend/target
 frontend/Cargo.lock
+**/.DS_Store
+frontend/wailsjs

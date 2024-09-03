@@ -1,0 +1,86 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 -29px; /* Reduced margin to bring logos closer */
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 0.50s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures logo scales with container */
+    background-origin: content-box;
+}
+
+/* Wails logo styling */
+.logo.wails {
+    width: 25%; /* Original size for Wails logo */
+    height: 30%;
+    transform: translateX(15px); /* Adjust positioning */
+}
+
+/* Yew logo styling */
+.logo.yew {
+    width: 20%; /* Consistent size */
+    height: 22%; /* Smaller height for Yew logo */
+    transform: translateY(-30px); /* Move Yew logo up */
+}
+
+/* Logo hover effects */
+.logo.wails:hover {
+    filter: drop-shadow(0 0 2em rgba(255, 0, 0, 0.5));
+}
+
+.logo.yew:hover {
+    filter: drop-shadow(0 0 2em #20a88a);
+}
+
+/* Result styling */
+.result {
+    height: auto; /* Responsive height */
+    line-height: 20px;
+    margin: 1.5rem auto;
+    color: #c5c6c7; /* Updated result text color */
+}
+
+/* Button styling */
+.input-box .btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 6px;
+    border: none;
+    margin-left: 20px;
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #c5c6c7; /* Updated button text color */
+    background-color: #23303b; /* Darker but not too dark */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow for prominence */
+}
+
+/* Button hover effect */
+.input-box .btn:hover {
+    background-color: #2a3748; /* Darker shade for hover effect */
+    transform: scale(1.05);
+}
+
+/* Input box styling */
+.input-box .input {
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    width: 260px;
+    height: 60px;
+    font-size: 18px;
+    padding: 0 16px;
+    color: #c5c6c7; /* Updated input text color */
+    background-color: #23303b; /* Match button background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Deeper shadow for prominence */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input box focus effect */
+.input-box .input:focus {
+    background-color: #2a3748; /* Darker shade on focus */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on focus */
+}

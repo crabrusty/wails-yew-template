@@ -1,0 +1,9 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "ware-watch",
+  "outputfilename": "wails-yew-template",
+  "frontend:install": "cargo install trunk",
+  "frontend:build": "trunk build",
+  "frontend:dev:watcher": "trunk serve --port 1420",
+  "frontend:dev:serverUrl": "http://127.0.0.1:1420/"
+}
